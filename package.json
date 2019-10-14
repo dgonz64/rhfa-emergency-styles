@@ -1,0 +1,32 @@
+{
+  "name": "rhfa-emergency-styles",
+  "version": "1.0.0",
+  "description": "Some styles for react-hook-form-auto",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass prefixed.sass:dist/styles.css unprefixed.sass:dist/unprefixed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgonz64/rhfa-emergency-styles.git"
+  },
+  "keywords": [
+    "css",
+    "styles",
+    "react-hook-form-auto"
+  ],
+  "files": [
+    "dist/*",
+    "inputs.sass",
+    "unprefixed.sass"
+  ],
+  "author": "David González <braben@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgonz64/rhfa-emergency-styles/issues"
+  },
+  "homepage": "https://github.com/dgonz64/rhfa-emergency-styles#readme",
+  "devDependencies": {
+    "sass": "^1.23.0"
+  }
+}
