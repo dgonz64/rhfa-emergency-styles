@@ -4,7 +4,8 @@
   "description": "Some styles for react-hook-form-auto",
   "main": "index.js",
   "scripts": {
-    "build": "sass prefixed.sass:dist/styles.css unprefixed.sass:dist/unprefixed.css"
+    "build": "sass prefixed.sass:dist/styles.css unprefixed.sass:dist/unprefixed.css",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
