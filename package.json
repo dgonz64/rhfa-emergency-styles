@@ -4,6 +4,7 @@
   "description": "Some styles for react-hook-form-auto",
   "main": "index.js",
   "scripts": {
+    "start": "sass --watch prefixed.sass:dist/styles.css unprefixed.sass:dist/unprefixed.css",
     "build": "sass prefixed.sass:dist/styles.css unprefixed.sass:dist/unprefixed.css",
     "prepublishOnly": "npm run build"
   },
@@ -28,6 +29,6 @@
   },
   "homepage": "https://github.com/dgonz64/rhfa-emergency-styles#readme",
   "devDependencies": {
-    "sass": "^1.23.0"
+    "sass": "^1.26.10"
   }
 }
