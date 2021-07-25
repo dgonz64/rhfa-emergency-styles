@@ -13,7 +13,6 @@ module.exports = {
   radioLabel: 'rhfa-radioLabel',
   inputPanelWrap: 'rhfa-inputPanelWrap',
   error: 'rhfa-error',
-  errorIcon: 'rhfa-errorIcon',
   select: 'rhfa-select',
   table: 'rhfa-table',
   panel: 'rhfa-panel',

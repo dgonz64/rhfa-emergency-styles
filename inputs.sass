@@ -1,16 +1,19 @@
 $height: 38px
 $select-padding: 6px
 $select-total-height: $height + $select-padding
-$error-color: #711
-$header-height: 48px
+$error-color: #a22
+$header-height: 46px
 
+// Outer wrapper that includes every input control
 .#{$namespace}inputBlockWrap
   display: flex
   flex-flow: column nowrap
   margin-bottom: 16px
+  // Input's label
   .#{$namespace}label
     flex: 0 auto
     margin-bottom: .25em
+// Styles for the input itself (<input />)
 .#{$namespace}input
   flex: 0 auto
   border: 1px solid #a0a0a0
@@ -18,21 +21,34 @@ $header-height: 48px
   border-radius: 4px
   padding: 0px 8px
   font-size: 16px
+  // Input is normal
   &.#{$namespace}standard
     min-height: $height
+  // Input has errors
   &.#{$namespace}errored
     border: 1px solid $error-color
+  &.#{$namespace}errored:focus
+    border: 1.5px solid $error-color
+// Inlined controls wrapper
 .#{$namespace}inlineWrap
   .#{$namespace}input
     width: calc(100% - 20px)
 
+// Header for input arrays
 .#{$namespace}itemHeader
   display: inline-block
 
+// Wrapper for the array panel
+.#{$namespace}inputPanelWrap
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+
+// Simply a button
 .#{$namespace}button
   min-height: $height
   height: $height
-  line-height: $height
+  line-height: 1em
   padding: 0px 8px
   border: 1px solid #b0b0b0
   background-image: linear-gradient(#f0f0f0, #c0c0c0)
@@ -40,33 +56,34 @@ $header-height: 48px
   margin: 0 4px
   cursor: pointer
 
+// Outer checkbox div
 .#{$namespace}checkboxWrap
   margin-bottom: 16px
 
+// Outer radio div
 .#{$namespace}radioGroupWrap
   margin-bottom: 16px
 
+// Label for checkbox and radio
 .#{$namespace}checkboxLabel, .#{$namespace}radioLabel
   margin-left: 8px
 
-.#{$namespace}inputPanelWrap
-  display: flex
-  flex-flow: row nowrap
-  align-items: center
+// Text to add insight
+.#{$namespace}helper
+  position: relative
+  font-size: 12px
+  font-style: italic
+  color: #606060
+  padding: 4px
 
+// Text to explain the error
 .#{$namespace}error
   position: relative
   font-size: 12px
   color: $error-color
   padding: 4px
-  .#{$namespace}errorIcon
-    width: calc(100% - 8px)
-    position: absolute
-    top: -26px 
-    text-align: right
-    color: $error-color
-    pointer-events: none
 
+// Select input
 .#{$namespace}select
   height: $select-total-height - $select-padding
   padding: $select-padding
@@ -74,6 +91,7 @@ $header-height: 48px
   background-image: linear-gradient(#ffffff, #f8f8f8, #e0e0e0)
   border-radius: 4px
 
+// Table for the input array table
 .#{$namespace}table
   td
     vertical-align: top
@@ -95,3 +113,5 @@ $header-height: 48px
     background-image: linear-gradient(#f8f8f8, #e8e8e8)
   .#{$namespace}contentMargin
     padding: 8px
+  &.#{$namespace}errored
+    border: 2px solid $error-color
