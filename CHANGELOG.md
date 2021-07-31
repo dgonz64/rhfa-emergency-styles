@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 (31/07/2021)
+
+* Change helper and input styles
+
 ## 1.0.1 (25/07/2021)
 
 * Removed errorIcon styles
