@@ -1,6 +1,6 @@
 {
   "name": "rhfa-emergency-styles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Some styles for react-hook-form-auto",
   "main": "index.js",
   "scripts": {
